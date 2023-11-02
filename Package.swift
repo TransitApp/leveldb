@@ -65,6 +65,7 @@ let package = Package(
         .define("HAVE_FULLFSYNC", to: "1"),
         .headerSearchPath("./"),
         .headerSearchPath("include/"),
+        .unsafeFlags(["-w"]),
       ]
     ),
   ],
